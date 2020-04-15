@@ -20,51 +20,6 @@ body
     margin:0;
     padding: 0;
 }
-
-nav
-{
-    margin:5px auto 0;
-    padding: 10px;
-    width: 100%;
-    letter-spacing:1px;
-}
-nav ol
-{
-    padding:0;
-	margin:0 15px 0 0;
-	list-style-type:none;
-	font-size:19px;
-	height:35px;
-	line-height:200%;
-    display: inline-block;
-    text-align: center;
-}
-nav ol li
-{
-    width: 150px;
-    height: 45px;
-    display: block;
-    float: left;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ol li a, nav ol li a:hover
-{
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 150px;
-    height: 45px;
-}
-nav ol li a:hover
-{
-    background-color:#393c40;
-}
 .animation
 {
     position: relative;
@@ -182,11 +137,10 @@ main
 {
     position: absolute;
     transition:1s;
-    width: 200px;
+    width: 100px;
     height: 400px;
-    animation:top 2.5s 0.5s both;
+    animation:top 2s 0.3s both;
     top: 300px;
-    left: -100px;
     right: 0;
     bottom: 0;
     margin-left: auto;
@@ -293,7 +247,7 @@ a[id="button"]
 {
     padding: 0 ;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 .col-sm-6
 {
@@ -366,11 +320,12 @@ img.n1
   {
     opacity:1;
     transform:translateY(0%);
+
   }
   50%
   {
-      width: 60%;
-      height: 40%;
+    width: 60%;
+    height: 40%;
   }
   100%
   {
