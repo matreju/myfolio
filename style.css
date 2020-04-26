@@ -1,3 +1,4 @@
+
 html
 {
     scroll-behavior: smooth;
@@ -8,7 +9,7 @@ body
     padding: 0;
     background-color: #2e3033;
     color: white;
-    font-size: 21px;
+    font: sans-serif 21px;
 }
 #container
 {
@@ -97,9 +98,8 @@ progress[value]::-webkit-progress-value {
     color: white;
     font-weight: bold;
 }
-.c1, .c2, .c3
+.c1, .c2
 {
-    height: 350px;
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -166,30 +166,31 @@ main
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
-.fb
+.fb,.mail
 {
     background-color: #3b5998;
     width: 300px;
     height: 200px;
-    float: left;
     margin-right: 10px;
     display: block;
     margin-top: 5px;
-
-
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 .mail
 {
     background-color: #393c40;
-    width: 300px;
-    height: 200px;
     float: left;
-    margin-top: 5px;
-    display: block;
 }
 .cent{
     text-align: center;
+    margin-top: 35px;
+    font-size: 27px;
 }
 #footer
 {
@@ -255,6 +256,8 @@ a[id="button"]
 .col-sm-6
 {
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 #poczatek
 {
