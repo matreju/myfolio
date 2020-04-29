@@ -18,7 +18,7 @@ const headerHeight=$header.outerHeight();
 // console.log("scroll");
 
 
-if(scrollPos>='660')
+if(scrollPos>='750')
   {
     $main.css({'display':'flex'});
   }
