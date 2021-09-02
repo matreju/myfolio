@@ -13,10 +13,15 @@ body
     margin-top: 10px;
     font-family: 'Noto Sans', sans-serif;
 }
-.swiper-container {
-    width: 600px;
+.swiper
+{
+    width: 100%;
     height: 300px;
-  }
+}
+  .c1
+{
+      padding-top: 10vh;
+}
 a
 {
     color: #d4d4d4;
@@ -29,3 +34,4 @@ a:hover
 {
     background-color: #4a4848;
 }
+
