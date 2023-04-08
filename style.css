@@ -1,37 +1,52 @@
 body
 {
-    margin: 1px;
-    padding: 3px;
-    font-family: 'Lato', sans-serif;
-    background-color: #4a4848;
-    color: #d4d4d4;
-}
-.title
-{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    font-family: 'Noto Sans', sans-serif;
-}
-.swiper
-{
-    width: 100%;
-    height: 300px;
-}
-  .c1
-{
-      padding-top: 10vh;
+    font-family:'Ubuntu', sans-serif;
+    background-image: url(images/bg.svg);
 }
 a
 {
-    color: #d4d4d4;
+    color: #3f3d56;    
 }
 a:hover
 {
-    color: #d4d4d4cc;
+    color: #7B5EC6;
 }
-.progress
+h1 {
+    white-space: pre-line;
+    font-size: 50px;
+  }
+.btn.border-none
 {
-    background-color: #4a4848;
+    background-color: #5D3EBD;
+    color: white;
+    width: 10rem;
+}
+.btn.border-none:hover
+{
+    background-color: #7B5EC6;
+}
+.btn.border-dark
+{
+    background-color: white;
+    width: 10rem;
+}
+.btn.border-dark:hover
+{
+    background-color: lightgray;
+}
+.about
+{
+    color: white;
+    text-align: center;
+    background-color: #5D3EBD;
+}
+#aboutspan
+{
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+.footericon
+{
+ color: aliceblue;   
 }
 

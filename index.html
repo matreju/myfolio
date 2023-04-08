@@ -2,280 +2,178 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio, Mateusz Rejnowcz. Początek przygody z programowaniem">
-    <meta name="keywords" content="HTML, CSS, XML, JavaScript, programowanie, CV, Portfolio, Java, Laravel, Bootstrap">
-    <meta name="author" content="Mateusz Rejnowicz">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--SKJRYPT JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="crossorigin="anonymous"></script>
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <!-- SKRYPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-    <!-- SWIPER -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-    <!--FONTAWESOME-->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mateusz Rejnowicz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-
-
-
-<title>Portfolio Mateusz Rejnowicz</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12" style="display: flex; flex-direction: column; align-items: left;justify-content: left;">
-        <div class="top_nav">
-          <p class="copy" style="font-size: 16px;">&copy MatReju 2021
-            <a class="nav_href" href="https://www.facebook.com/MatReju"target="_blank"><i class="fab fa-facebook-f fa-2x" style="margin-top: 5px; margin-right: 4px;"></i></a>
-            <a class="nav_href" href="https://matinf279526631.wordpress.com/"> <i class="fab fa-wordpress fa-2x" style="margin-top: 5px; margin-left: 4px;"></i></a>
-          </p>
-          </div>
-      </div>
-    </div>
-</div>
-    <div id="container">
-
-            <p class="title"style="text-align:center">Coś o mnie</p>
-
-            <div class="row" style="margin-right: 0;">
-                <div class="col-md-7" style="padding:30px 40px 0px 40px">
-                    <span style="text-align: center; font-size: 17px;">
-                        <p>Mam na imię Mateusz, mam 21 lat, jestem absolwentem technikum w zawodzie informatyk. Obecnie jestem studentem drugiego roku informatyki, na Politechnice Świętokrzyskiej. </p>
-                        <p> Moja przygoda z programowaniem zaczęła się w 2018r.  Strona ta jest jednym z projektów któremu poświęcam swój wolny czas.
-                        Staram się rozwijać, być na bieżąco z wszelkimi nowinkami technologicznymi. Każdą wolną chwilę spędzam na udoskonalaniu siebie, oraz moich projektów.</p>
-                        <p>Nowe pomysły są na bieżąco wdrażane.Strona ta jest swego rodzaju wizytówką oraz moją motywacją do dalszej pracy nad sobą.
-                        Robię wszytko, aby dotrzeć do szerszego grona odbiorców co pozwoli mi rozwinąć skrzydła.</p>
-                    </span>
-                </div>
-                    <div class="col-md-4" style="text-align: center;padding-top: 20px;">
-                        <span>
-                            <p style="font-size: 20px; text-transform: uppercase;">Prowadzę też bloga na wordpressie</p>
-                            <p><a href="https://matinf279526631.wordpress.com/">KLIKNIJ TU (lub ikonke wordpressa) ABY ZOBACZYĆ</a></p>
-                            <a class="wordpress" href="https://matinf279526631.wordpress.com/"> <i class="fab fa-wordpress fa-8x"></i></a>
-                        </span>
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#abouthref">O mnie</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#projects">Moje projekty</a>
+                    </li>
+                </ul>
             </div>
-    </div>
-    <div class="container">
-        <p class="title"style="text-align:center; margin-top:7vh">Technologie które poznałem</p>
-        <div class="row" style="margin-top: 45px;">
-
-
-        <div class="swiper mySwiper">
-
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-html5 fa-10x" ></i>
-                    </div>
-                      <div class="details">
-                        <h3>HTML</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="96" max="100"></progress>
-                      </div>
-                      <div class="procent">
-                        <span>96%*</span>
-                      </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-css3-alt fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>CSS</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="86" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>93%</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-js fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>JavaScript</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="51" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>47%</span>
-                      </div>
-                </div>
-                </div>
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-bootstrap fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>Bootstrap</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="25" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>25%</span>
-                      </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-php fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>PHP</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="55" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>55%</span>
-                      </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-laravel fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>Laravel</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="14" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>14%</span>
-                      </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="box" style="display: flex;flex-direction: column; align-items: center;">
-                    <div class="imgBox">
-                        <i class="fab fa-java fa-10x"></i>
-                      </div>
-                      <div class="details">
-                        <h3>Java</h3>
-                      </div>
-                      <div class="progress">
-                        <progress value="10" max="100"></progress>
-                      </div>
-                      <div class="procent"><span>10%</span>
-                      </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
         </div>
-    <p class="col-12" style="text-align: center;">*-określa procent na jaki oceniam swoje umiejętności w danej technologii</p>
-
-    </div>
-    <div class="container-fluid" style="margin-top: 7vh;">
-            <div class="row">
-                <div class="col-md-3">
-                    <p class="col-12" style="padding-top: 10px; text-align: center; font-size: 20px; font-weight: bold;" >
-                        KONTAKT FB
+    </nav>  
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="col-lg-6 px-5 pt-3">
+                <span class="fs-5">
+                    <h1 class="pb-1">
+                        Cześć,
+                       <span style=" font-weight:bold;">Jestem <span style="color:#5D3EBD;">Mateusz Rejnowicz</span></span>  
+                    </h1> 
+                    <span class="pt-2" style="color:#4A4B64;">PHP developer, skupiający się na Laravelu</span>    
+                </span>
+                <div class="boxes pt-5 mt-5">
+                    <a class="btn border-none rounded-0 p-3 mx-2 my-2" href="mailto:mati120ful@gmail.com">Skontaktuj się</a>
+                    <a class="btn border-dark rounded-0 p-3 mx-2 my-2" href="CV-Mateusz-Rejnowicz.pdf">Pobierz CV</a>
+                </div>
+            </div>
+            <div class="col-lg-5"><img src="images/programming.svg" alt="me" class="img-fluid my-1"></div>
+            <div class="col-lg-1 d-flex flex-column justify-content-center align-items-center">
+                <div class="my-2">
+                    <a href="https://www.facebook.com/MatReju" class="link-unstyled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="my-2">
+                    <a href="https://matinf279526631.wordpress.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="my-2">
+                    <a href="https://www.linkedin.com/in/mateusz-rejnowicz-4630aa211/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a>  
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-lg-12 about mt-5 pt-4">
+                <div id="abouthref"></div>
+                <h1 class="mb-4 mt-2">O mnie</h1>
+                <div class="pb-3">
+                    <p>
+                        Jestem absolwentem technikum w zawodzie informatyk i obecnie rozwijam swoje umiejętności w dziedzinie programowania webowego. Najbardziej interesuje mnie framework Laravel, który uważam za świetne narzędzie do tworzenia skalowalnych aplikacji webowych.
+                        Jestem także zainteresowany dziedziną ecommerce i Magento, a chętnie rozwijam swoje umiejętności w tych obszarach. Jestem zmotywowany do ciągłego uczenia się nowych technologii i rozwiązań, aby zawsze być na bieżąco z najnowszymi trendami w branży IT. 
                     </p>
-                    <div class="col-3" style="padding-left:40%;padding-top: 5%;"><a href="https://www.facebook.com/MatReju"target="_blank">
-                       <i class="fab fa-facebook-f fa-7x" ></i></a>
+                    <p>
+                        W swojej pracy stawiam na jakość kodu i dbam o to, aby moje rozwiązania były czytelne, łatwe do utrzymania i zgodne z najlepszymi praktykami programistycznymi. Zawsze dążę do samodoskonalenia, uczestnicząc w różnych szkoleniach i konferencjach branżowych oraz korzystając z dostępnych online materiałów.
+                    </p>
+                    <p>
+                        Jestem gotów do podjęcia wyzwań i pracy w zespole, a moją pasją jest rozwiązywanie skomplikowanych problemów programistycznych. Chętnie dzielę się swoimi pomysłami i współpracuję z innymi, aby osiągnąć najlepsze rezultaty w projektach, nad którymi pracuję.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div id="projects"></div>
+            <h1 class="text-center mb-4 mt-2">Moje projekty</h1>
+            <div class="col-lg-3 d-flex align-items-end"><img src="images/projects.svg" alt="" class="img-fluid"></div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4 card my-2 mx-4" style="width: 19rem;">
+                        <img src="images/snake.jpg" class="card-img-top" alt="snake projekt" height="170">
+                        <div class="card-body">
+                            <h5 class="card-title">Gra Snake</h5>
+                            <p class="card-text">Gra Snake napisana ze znajomymi w języku C z wykorzystaniem biblioteki graficznej Allegro 5. Wąż porusza się, zjada jabłka, rośnie i zbiera punkty. Musi uważać na grzybki i ściany</p>
+                            <a href="#" class="btn border-none disabled">Przekonaj się!</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card my-2 mx-4" style="width: 19rem;">
+                        <img src="images/jed.jpg" class="card-img-top" alt="przelicznik projekt"height="170">
+                        <div class="card-body">
+                            <h5 class="card-title">Przelicznik jednostek</h5>
+                            <p class="card-text">Aplikacja okienkowa służąca do konwersji jednostek miar, długości itd. Napisana w C++ z pomocą biblioteki graficznej QT</p>
+                            <a href="#" class="btn border-none disabled">Przekonaj się!</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 card my-2 mx-4" style="width: 19rem;">
+                        <img src="images/komis.jpg" class="card-img-top" alt="autokomis projekt"height="170">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplikacja komisu samochodowego</h5>
+                            <p class="card-text">Aplikacja Laravel typu OLX, OTOMOTO służąca do obsługi komisu samochodowego, umożliwia ona zarządzanie samochodami znajdującymi się na placu. Aplikacja w pełni obsługuje CRUD  </p>
+                            <a href="http://autokomismatrej.pl/" target="_blank" class="btn border-none">Przekonaj się!</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p class="col-12" style="padding-top: 10px; text-align: center; font-size: 20px; font-weight: bold;" >
-                        GDZIE MIESZKAM
-                    </p>
-                    <iframe class="col-12"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6013.678268136364!2d21.04619576741258!3d50.67465262391928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717fbcadd915b35%3A0xea6bc345b559fc23!2s26-035%20Rak%C3%B3w!5e0!3m2!1spl!2spl!4v1618582254941!5m2!1spl!2spl" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-lg-12 mt-4 text-center">
+                <h4>Prowadzę też bloga!</h4>
+                <p>Blog w tematyce programowania oraz mojego spojrzenia na związane z tym tematem zagadnienia</p>
+                <div class="my-2">
+                    <a href="https://matinf279526631.wordpress.com/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+                            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+                            <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <p class="col-12" style="padding-top: 10px; text-align: center; font-size: 20px; font-weight: bold;" >
-                        KONTAKT MAIL
-                    </p>
-                    <div class="col-3"style="padding-left:36%;padding-top: 5%;"><a href="mailto:mati120ful@gmail.com">
-                        <i class="fas fa-envelope fa-7x" ></i></a>
-                    </div>
-                </div>
-              </div>
-    </div>
-    <div class="container">
-              <p class="title"style="text-align:center; margin-top:7vh;">Coś więcej o mnie..</p>
-              <div class="row">
-                    <p class="col-12">
-                        Informatyką jestem zafascynowany od dziecka, zawsze ciągnęło mnie w tym kierunku i nie miałem zamiaru rozglądać się za innymi zainteresowaniami.<br>
-                        Fakt, że jestem bardzo zdeterminowany, doprowadził mnie do tego miejsca, gdzie mogę realizować marzenia i spełniać się zawodowo. Nadal chcę się rozwijać, biorę udział w wielu kursach, które pozwolą mi poszerzyć mój zakres umiejętności oraz, poprawić umiejętności już posiadane. Ciągle szukam pomysłów na nowe projekty i sposoby samorozwoju.
-                        W informatyce najbardziej odpowiada mi programowanie i bazy danych, w tym czuję się swobodnie i praca sprawia mi masę przyjemności.
-                        Zdecydowanie nie przepadam za pracą przy sieciach komputerowych, potrafię się tym zajmować, ale nie sprawia mi to zbyt wiele radości, przez co moja efektywność znacząco spada.
-                        Poza informatyką interesuje się wszelakimi rodzajami sportu, uważam, że ruch to zdrowie i jest on potrzebny w naszym życiu, zwłaszcza dla osób, które większość czasu spędzają w pozycji siedzącej przed komputerem.
-                        Wieczorem, kiedy nikt nie ma już ochoty męczyć oczu niebieskim światłem monitora, lubię „przerzucić” swój wzrok w kierunku książki, głównie fantasy, ale nie pogardzę także dobrym kryminałem :D
-                    </p>
-              </div>
-              <p class="title"style="text-align:center; margin-top:7vh;">Moje osiągnięcia</p>
-              <div class="col-12">
-                <p>Zdecydowanie jednym z moich osiągnięć jest ta strona, której poświęciłem dużo czasu i serca. <br>Innym moim projektem jest aplikacja w frameworku Laravel wykorzystującym język PHP, dla jednostki samorządu terytorialnego.</p>
-              </div>
-
-
-    </div>
-    <div class="container-fluid"style="margin-top:100px">
-        <div class="row">
-          <div class="col-12" style="display: flex; flex-direction: column; align-items: center;justify-content: center;">
-              <p class="copy" style="font-size: 16px;">&copy 2021 Mateusz Rejnowicz</p>
-              <div class="bottom_nav">
-                <a class="nav_href" href="https://www.facebook.com/MatReju"target="_blank"><i class="fab fa-facebook-f fa-3x" style="margin-top: 5px; margin-right: 4px;"></i></a>
-                <a class="nav_href" href="https://matinf279526631.wordpress.com/"> <i class="fab fa-wordpress fa-3x" style="margin-top: 5px; margin-left: 4px;"></i></a>
-              </div>
-          </div>
+            </div>
         </div>
     </div>
-<!-- Messenger Wtyczka czatu Code -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v10.0'
-    });
-  };
+    <footer class="text-center text-lg-start" style="background-color: #1b1238;">
+        <div class="container d-flex justify-content-center pt-5 pb-2">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="" class="link-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+                        <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+                        <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                        <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+                    </svg>
+                </a>          
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>            
+            </button>
+        </div>
+        <p class="text-center "style="color:white">mati120ful@gmail.com</p>
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- Your Wtyczka czatu code -->
-<div class="fb-customerchat"
-  attribution="biz_inbox"
-  page_id="112426030453002">
-</div>
-    <script src="swiper.js"></script>
-
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <span class="text-white" >Mateusz Rejnowicz</span>
+        </div>
+    </footer>
 </body>
 </html>
