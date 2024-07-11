@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mateusz Rejnowicz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#abouthref">O mnie</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" href="#projects">Moje projekty</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <div class="container-fluid">
+        <div class="row mt-1">
+            <div class="col-lg-12 about mt-5 pt-4">
+                <h1 class="text-center mb-4 mt-2">Opis aplikacji AUTOKOMIS</h1>
+                <div class="pb-3">
+                    <p>
+                       Cześć! Miło mi że postanowiłeś chociaż sprawdzić co tam wykombinowałem. Może moja praca zainteresuje jakiegoś potencjalnego pracodawce. Poniżej będą znajdować się zrzuty ekranu tego co udało mi się wyklikać, oraz niektóre 'funkcjonalności' i proste zasady działania aplikacji.
+                       Czy jest ona gotowa do użytku? Może 20 lat temu zrobiłaby furore, ale jak na obecne standardy jest tam jeszcze sporo niedociągnięć, co nie zmienia faktu że jestem dumny z tego co samodzielnie udało mi się stworzyć i jak wielu rzeczy zdołałem się nauczyć.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 mx-auto d-flex align-items-center justify-content-center">
+                <img src="./images/główna.png" alt="" class="img-fluid w-75" data-toggle="modal" data-target="#imageModal1" title="Można kliknąć, żeby powiększyć" style="cursor: pointer;">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="mb-4 mt-2">Strona startowa</h2>
+                    <p> Po wejściu na strone ukazują się nam kafelki z aktualnie dostępnymi autami. Każdy kafelek jest odnośnikiem do podstrony ze szczegółami pojazdu. Kafelki mają być 'zajawką' która ma zachecić do kliknięcia i zobaczenia szczegółów ogłoszenia. Wyszczególnione są najważniejsze informacje, takie jak model, marka, zdjęcie, cena, rok, przebieg itd. 
+                        Na jednej stronie mieci się 10 ofert. Po przekroczeniu tego limitu tworzy się możliwośc przejścia na następną strone
+                        Na górze strony znajduje się wyszukiwarka ułatwiająca znalezienie interesującego nas pojazdu, użytkownik ma możliwość znalezienia auta na podstawie danych które są widoczne z tego panelu czyli model, marka, przebieg, rok. Jeżeli w ofercie znajduje się auto spełniające wymagania, napewno się ono pokaże. Wyszukiwanie zostało wykonane z pomoca Ajax-a, każdorazowe kliknięcie przycisku SZUKAJ "buduje" stronę od nowa wyświetlając samochody spełniające kryteria. Jeżeli nie ma takiego auta ukazuje się stosowny komunikat. 
+                        TAK, kafelek z wyszukiwaniem po paliwie wygląda jak wygląda ale nie było łatwo zrobić go tak żeby działał i wyświetlał poprawne wyniki (mimo wszystko najważniejsze że działa).  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="mb-4 mt-2">Strona ogłoszenia</h2>
+                    <p> Jeżeli odwiedzający zdecyduje się kliknąć w ogłoszenie, wyświetli mu się taka o to strona, ze wszystkimi szczegółami które sa wprowadzone w baze danych. Calła galeria zdjęć, dokładnie dane auta, wraz z jego numerkiem na placu (każde auto ma swój UNIKATOWY numer). Wyposażenie auta, opis w którym wypisane moga być wszystkie dodatkowe informacje wprowadzone przez właściciela. 
+                        Jeżeli zdecydujemy się na jakiś kontakt ze sprzedającym to możemy zadzwonić, lub też napisać maila. Skrzynka odbiorcza obsługiwana przez mailtrap.io , jeżeli uda się wysłać wiadomośc na ekranie wyswietla się komunikat o powodzeniu operacji. Na mailu komisu pojawia się zapytanie o auto o takim i takim modelu i numerze na placu  
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto d-flex align-items-center justify-content-center">
+                <img src="./images/ogłoszenie.png" alt="" class="img-fluid w-75" data-toggle="modal" data-target="#imageModal2" title="Można kliknąć, żeby powiększyć" style="cursor: pointer;">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 mx-auto d-flex align-items-center justify-content-center">
+                <img src="./images/widok_admin.png" alt="" class="img-fluid w-75" data-toggle="modal" data-target="#imageModal3" title="Można kliknąć, sie powiększy" style="cursor: pointer;">
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="mb-4 mt-2">Widok admina</h2>
+                    <p> Administrator strony ma swój dedykowany widok dostępny tylko dla niego (zalogowanego użytkownika). Ma pogląd na poajzdy obecnie wystawione. Może dodać nowe samochody, wyszukać auto po jego numerze na placu (działa identycznie jak filtrowanie na stronie głównej). Usunąć ogłoszenie lub zedytować je.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="mb-4 mt-2">Dodawanie i edytowanie ogłoszenia</h2>
+                    <p>Dodawanie nowego ogłoszenia jest bardzo proste. Wypełniamy wszystkie dane, klikamy przycisk POTWIERDŹ i dane trafiają do bazy danych. Oczywiście jeżeli najpierw przejdą zadeklarowane zasady walidacji, jeżeli będzie jakiś problem, zostaniemy o tym poinformowani.
+                        Teraz trochę o tym jak dodawany jest model i marka. Mamy tabelę z markami aut jak takimi jak FIAT, AUDI itp. Pobieramy dane z bazy i wyświetlamy za pomocą pętli foreach. Po wybrainu interesującej nas marki, zaglądamy do tabeli z modelami aut. Oczywiście tabela z modelami aut jest powiązana z tabelą z markami aut, co zapobiega sytuacji że wyświetlą się nam modele auta innej marki. Mówiąc w skrócie i prostym językiem, jeżeli wybierzemy że chcemy dodać Opla, to w polu MODEL mamy do wyboru TYLKO Ople, Astra, Insignia itp. Rodzaj podwozia też jest odczytywany z dedykowanej tabeli, tak samo rodzaj paliwa itd.
+                        Pole WYPOSAŻENIE posiada podstawową walidacje. Jeżeli wybierzemy jedną opcje to drugą mamy zablokowaną (bo przecież nie możemy mieć jednocześnie klimatyzacji automatycznej i manualnej). Mamy opcje dodawania zdjeć, do których ścieżka również jest zapisywana w dedykowanej tabeli. Jeżeli edytujemy ogłoszenie, to mamy podgląd do aktualnych zdjęć, możemy je usuwać i dodawać od nowa. Po usunięciu, zdjęcie znika także z bazy danych.    
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 mx-auto mb-5 d-flex align-items-center justify-content-center">
+                <div class="row">
+                    <img src="./images/dodawanie.png" alt="" class="img-fluid w-75" data-toggle="modal" data-target="#imageModal4" title="Można kliknąć, żeby powiększyć" style="cursor: pointer;">
+                </div>
+                <div class="row">
+                    <img src="./images/edytowanie.png" alt="" class="img-fluid w-75" data-toggle="modal" data-target="#imageModal5" title="Można kliknąć, żeby powiększyć" style="cursor: pointer;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="./images/główna.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="./images/ogłoszenie.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="./images/widok_admin.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="./images/dodawanie.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+            <div class="modal-body text-center">
+              <img src="./images/edytowanie.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start" style="background-color: #1b1238;">
+        <div class="container d-flex justify-content-center pt-5 pb-2">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="" class="link-unstyled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
+                        <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
+                        <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
+                        <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
+                    </svg>
+                </a>          
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <a class="footericon" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                </a>            
+            </button>
+        </div>
+        <p class="text-center "style="color:white">mati120ful@gmail.com</p>
+
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <span class="text-white" >Mateusz Rejnowicz</span>
+        </div>
+    </footer>
+</body>
+</html>

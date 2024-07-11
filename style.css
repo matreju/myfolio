@@ -49,4 +49,6 @@ h1 {
 {
  color: aliceblue;   
 }
-
+.modal-xl {
+    max-width: 60%; 
+}
